@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de contacto con Bootstrap</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="link__tittle">FalconMasters</a>
+        <nav class="navegacion">
+            <ul class="navegacion__lista">
+                <li><a class="links" href="index.html">Inicio</a></li>
+                <li>
+                    <a class="links dropdown-toggle" id="productosDropdown" data-toggle="dropdown">Productos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="links__dropdown" href="#">Computadoras</a></li>
+                        <li><a class="links__dropdown" href="#">Laptops</a></li>
+                        <li><a class="links__dropdown" href="#">Smartphones</a></li>
+                        <li><a class="links__dropdown" href="#">Drones</a></li>
+                        <li><a class="links__dropdown" href="#">Accesorios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="container mt-4" class="contacto">
+        <div class="row justify-content-center">
+           <div class="col-md-6 contacto">
+            <h2 class="text-center">Contacto</h2>
+            <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+           </div>
+        </div>
+      </div>
+
+      <footer class="mt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<hr>
+					<p class="pull-left">
+						FalconMasters.com
+						<a href="#">Acerca de</a>
+						<a href="contacto.html">Contacto</a>
+					</p>
+					<p class="pull-right"><a href="#">Subir en Pagina</a></p>
+					<br>
+				</div>
+			</div>
+		</div>
+	</footer>
+      
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/dropdown.js"></script>
+</body>
+</html>
